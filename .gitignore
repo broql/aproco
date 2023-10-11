@@ -1,0 +1,6 @@
+data/
+.env
+startup.sh
+__pycache__/
+.vscode/
+```
