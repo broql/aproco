@@ -7,4 +7,3 @@ chromadb=0.3.23
 tiktoken=0.4.0
 pypdf=3.12.1
 pandas=2.0.3
-dotenv
