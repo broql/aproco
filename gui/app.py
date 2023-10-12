@@ -88,6 +88,17 @@ padding: 3rem;
 background: white;            
 }       
 
+.stMarkdown h3 {
+padding: 0;
+color: #244250;
+text-align: center;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;                  
+}            
+
 </style>
 """, unsafe_allow_html=True)
 
