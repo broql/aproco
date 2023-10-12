@@ -76,7 +76,7 @@ st.markdown("""
     left: 0;
 }
 [data-testid="stHorizontalBlock"]>[data-testid="column"]:nth-child(1) img {
-    width: 50px;
+    width: 50px !important;
 }
 [data-testid="stHorizontalBlock"]>[data-testid="column"]:nth-child(2) {
     flex: 1 1 calc(75% - 1rem);
@@ -84,14 +84,11 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-col1, col2 = st.columns(2)
+st.image(Image.open('gui/images/aproco.png'), width=150)
+st.image(Image.open('gui/images/nd.png'), width=80)
 
-with col1:
-    st.image(Image.open('gui/images/aproco.png'), width=150)
-    st.image(Image.open('gui/images/nd.png'), width=80)
 
-with col2:
-    st.markdown("# Knowledge Assistant")
+st.markdown("# Knowledge Assistant")
 
 st.expander('User Manual', expanded=False).markdown("""
 **Welcome to our test site!**
