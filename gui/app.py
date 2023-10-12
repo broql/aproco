@@ -86,7 +86,15 @@ padding: 3rem;
 
 .st-bw {
 background: white;            
-}            
+}       
+
+.css-ocqkz7:after {
+content: "";
+display: block;
+position: absolute;
+top: 0;
+left: 0;                                                
+}
 
 </style>
 """, unsafe_allow_html=True)
