@@ -122,6 +122,7 @@ background: white;
 # In case of any questions, please contact us directly: nd@aproco.io
 # """)
 
+st.markdown("# Knowledge Assistant")
 st.markdown("### Hi! Ask me a question!")
 st.markdown("#### I'm still learning but I'll try to do my best!")
 
