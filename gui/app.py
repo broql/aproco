@@ -77,7 +77,7 @@ def on_dislike():
 columns = st.columns(2)
 columns[1].image(Image.open('gui/images/aproco.png'), width=150)
 columns[1].image(Image.open('gui/images/nd.png'), width=80)
-columns[1].markdown("# Knowledge Assistant")
+columns[2].markdown("# Knowledge Assistant")
 
 st.expander('User Manual', expanded=False).markdown("""
 **Welcome to our test site!**
