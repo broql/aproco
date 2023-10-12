@@ -124,7 +124,7 @@ background: rgba(214, 231, 231, 0.54);
 padding: 20px;
 }
             
-[data-testid="stVerticalBlock"] div:nth-child(3) > [data-testid="stVerticalBlock"] [data-baseweb="input"] > [data-baseweb="input"] {
+[data-testid="stVerticalBlock"] div:nth-child(3) > [data-testid="stVerticalBlock"] [data-baseweb="input"] > [data-baseweb="input"] > [data-baseweb="input"] {
 background: white;            
 }
 
