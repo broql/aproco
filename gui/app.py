@@ -70,6 +70,7 @@ st.markdown("""
 <style>
 [data-testid="block-container"] {
 background: #D6E7E7;
+border-radius: 10px;
 }
 </style>
 """, unsafe_allow_html=True)
