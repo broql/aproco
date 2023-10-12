@@ -88,7 +88,7 @@ padding: 3rem;
 background: white;            
 }       
 
-.css-ocqkz7:before {
+[data-testid="stVerticalBlock"]:before {
 background: gray;
 content: "";
 display: block;
