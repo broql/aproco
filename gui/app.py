@@ -101,6 +101,7 @@ line-height: normal;
 .stMarkdown h3 {
 padding: 0;
 color: #244250;
+text-align: center;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
