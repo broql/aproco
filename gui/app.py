@@ -119,6 +119,12 @@ font-weight: 600;
 line-height: normal;                  
 }            
 
+[data-testid="stVerticalBlock"] div:nth-child(4){
+position: fixed;
+left: 50px;
+top: 50px;                        
+}
+
 [data-testid="stVerticalBlock"] div:nth-child(6) > [data-testid="stVerticalBlock"] .stMarkdown h3,
 [data-testid="stVerticalBlock"] div:nth-child(5) > [data-testid="stVerticalBlock"] .stMarkdown h3 {
 padding: 0;
