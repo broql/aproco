@@ -118,13 +118,7 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;                  
 }            
-
-[data-testid="stVerticalBlock"] div:nth-child(2){
-position: fixed;
-left: 50px;
-top: 50px;                        
-}
-
+            
 [data-testid="stVerticalBlock"] div:nth-child(6) > [data-testid="stVerticalBlock"] .stMarkdown h3,
 [data-testid="stVerticalBlock"] div:nth-child(5) > [data-testid="stVerticalBlock"] .stMarkdown h3 {
 padding: 0;
@@ -165,9 +159,9 @@ border: 0;
 """, unsafe_allow_html=True)
 
 
-with st.container():
-    st.image(Image.open('gui/images/aproco.png'), width=120)
-    st.image(Image.open('gui/images/nd.png'), width=50)
+# with st.container():
+#     st.image(Image.open('gui/images/aproco.png'), width=120)
+#     st.image(Image.open('gui/images/nd.png'), width=50)
 
 # st.markdown("# Knowledge Assistant")
 
