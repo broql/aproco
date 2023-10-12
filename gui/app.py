@@ -78,8 +78,6 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.image(Image.open('gui/images/aproco.png'), width=150)
-
-with col2:
     st.image(Image.open('gui/images/nd.png'), width=80)
 
 with col3:
