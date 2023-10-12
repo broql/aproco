@@ -92,7 +92,6 @@ background: white;
 padding: 0;
 color: #244250;
 text-align: center;
-font-family: Roboto;
 font-size: 24px;
 font-style: normal;
 font-weight: 600;
@@ -133,8 +132,8 @@ line-height: normal;
 # In case of any questions, please contact us directly: nd@aproco.io
 # """)
 
-st.header("Knowledge Assistant")
-st.subheader("Hi! Ask me a question!")
+st.title("Knowledge Assistant")
+st.header("Hi! Ask me a question!")
 st.subheader("I'm still learning but I'll try to do my best!")
 
 col1, col2 = st.columns([0.88, 0.12])
