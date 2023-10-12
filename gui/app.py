@@ -70,10 +70,10 @@ st.markdown("""
 <style>
             
             
-[data-testid="stAppViewContainer"][data-testid="block-container"][data-testid="stVerticalBlock"][data-testid="stHorizontalBlock"][data-testid="column"]:first-child {
+[data-testid="stHorizontalBlock"]>[data-testid="column"]:nth-child(1) {
     flex: 1 1 calc(25% - 1rem);
 }
-[data-testid="stAppViewContainer"][data-testid="block-container"][data-testid="stVerticalBlock"][data-testid="stHorizontalBlock"][data-testid="column"]:nth-child(2) {
+[data-testid="stHorizontalBlock"]>[data-testid="column"]:nth-child(2) {
     flex: 1 1 calc(75% - 1rem);
 }
 </style>
