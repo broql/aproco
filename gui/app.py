@@ -119,7 +119,7 @@ font-weight: 600;
 line-height: normal;                  
 }            
 
-[data-testid="stVerticalBlock"] div:nth-child(4){
+[data-testid="stVerticalBlock"] div:nth-child(2){
 position: fixed;
 left: 50px;
 top: 50px;                        
