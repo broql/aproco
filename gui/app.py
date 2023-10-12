@@ -82,12 +82,7 @@ border-radius: 10px;
 position: relative;
 top: 50px;
 padding: 3rem;
-}            
-
-.st-bw,
-.st-bz {
-background: white;            
-}       
+}             
 
 .stMarkdown h1 {            
 color: #244250;
@@ -141,7 +136,7 @@ background: rgba(214, 231, 231, 0.54);
 padding: 20px;
 }
             
-[data-testid="stVerticalBlock"] div:nth-child(3) > [data-testid="stVerticalBlock"] [data-baseweb="input"] > [data-baseweb="input"] > [data-baseweb="input"] {
+[data-testid="stVerticalBlock"] div:nth-child(3) > [data-testid="stVerticalBlock"] [data-baseweb="input"] > [data-baseweb="base-input"] {
 background: white;            
 }
 
