@@ -126,7 +126,7 @@ st.markdown("# Knowledge Assistant")
 st.markdown("### Hi! Ask me a question!")
 st.markdown("#### I'm still learning but I'll try to do my best!")
 
-col1, col2 = st.columns([0.8, 0.2])
+col1, col2 = st.columns([0.9, 0.1])
 
 with col1:
     query = st.text_input(
