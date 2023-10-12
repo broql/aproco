@@ -88,17 +88,6 @@ padding: 3rem;
 background: white;            
 }       
 
-[data-testid="stVerticalBlock"]:before {
-background: gray;
-content: "";
-display: block;
-position: absolute;
-width: 100%;
-height: 100px;
-left: 0;
-z-index: 0;
-}
-
 </style>
 """, unsafe_allow_html=True)
 
