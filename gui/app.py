@@ -89,30 +89,30 @@ st.image(Image.open('gui/images/nd.png'), width=80)
 
 st.markdown("# Knowledge Assistant")
 
-st.expander('User Manual', expanded=False).markdown("""
-**Welcome to our test site!**
+# st.expander('User Manual', expanded=False).markdown("""
+# **Welcome to our test site!**
 
-The project aim is to test the possibility of an AI driven assistant for knowledge management in the ever changing regulations environment.
+# The project aim is to test the possibility of an AI driven assistant for knowledge management in the ever changing regulations environment.
 
-We have uploaded a list of documents from FDA and EU regulations (list available underneath) for it to digest and be able to respond to questions related to these topics.
+# We have uploaded a list of documents from FDA and EU regulations (list available underneath) for it to digest and be able to respond to questions related to these topics.
 
-Please feel free to ask any questions, but given it's a proof of concept, it's not perfect - partially for a reason. We want to see how you interact with the model and adjust accordingly.
+# Please feel free to ask any questions, but given it's a proof of concept, it's not perfect - partially for a reason. We want to see how you interact with the model and adjust accordingly.
 
-There are some tips on how to get more relevant information:
-- Give context. For example:
-    - “What is the requirement for cleaning procedure?”
-        - This question might not get the best results, as we have purposefully uploaded more documents that cover different areas, to see how it's gonna work.
-    - “What is the requirement for cleaning procedure in [some situation] according to FDA regulations?”
-        - This question should get much better results.
-- In the near future, the model will try to determine what it might need to ask to get a better understanding of what's expected from it, but it's not there yet.
-- The more specific you are, the better the result.
-- If the model cannot find a specific answer in source documents, it should say it doesn't know - not hallucinate. In that case, please try to rephrase the question.
-- Other general tips for using ChatGPT or similar tools apply here as well, as it's also based on LLM (Large Language Model) and works in a similar way.
+# There are some tips on how to get more relevant information:
+# - Give context. For example:
+#     - “What is the requirement for cleaning procedure?”
+#         - This question might not get the best results, as we have purposefully uploaded more documents that cover different areas, to see how it's gonna work.
+#     - “What is the requirement for cleaning procedure in [some situation] according to FDA regulations?”
+#         - This question should get much better results.
+# - In the near future, the model will try to determine what it might need to ask to get a better understanding of what's expected from it, but it's not there yet.
+# - The more specific you are, the better the result.
+# - If the model cannot find a specific answer in source documents, it should say it doesn't know - not hallucinate. In that case, please try to rephrase the question.
+# - Other general tips for using ChatGPT or similar tools apply here as well, as it's also based on LLM (Large Language Model) and works in a similar way.
 
-Please keep in mind that we keep a log of questions and answers for evaluation purposes, as the tool is under development and we want to keep improving it and test on the same questions, in case it produces a bad result. These are in no way associated with a user/computer/IP.
+# Please keep in mind that we keep a log of questions and answers for evaluation purposes, as the tool is under development and we want to keep improving it and test on the same questions, in case it produces a bad result. These are in no way associated with a user/computer/IP.
 
-In case of any questions, please contact us directly: nd@aproco.io
-""")
+# In case of any questions, please contact us directly: nd@aproco.io
+# """)
 
 st.markdown("### Hi! Ask me a question!")
 st.markdown("#### I'm still learning but I'll try to do my best!")
