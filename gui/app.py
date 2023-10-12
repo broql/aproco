@@ -74,13 +74,13 @@ def on_dislike():
 # </style>
 # """, unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 
 with col1:
     st.image(Image.open('gui/images/aproco.png'), width=150)
     st.image(Image.open('gui/images/nd.png'), width=80)
 
-with col3:
+with col2:
     st.markdown("# Knowledge Assistant")
 
 st.expander('User Manual', expanded=False).markdown("""
