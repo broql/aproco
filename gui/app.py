@@ -114,7 +114,8 @@ text-align: center;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: normal;              
+line-height: normal;    
+margin-bottom: 20px;          
 }            
 
 </style>
