@@ -129,6 +129,11 @@ padding: 20px;
 background: white;            
 }
 
+button[kind="secondary"] {
+border-radius: 10px;
+background: #34BFC3;            
+}            
+
 </style>
 """, unsafe_allow_html=True)
 
