@@ -116,7 +116,12 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;    
 margin-bottom: 20px;          
-}            
+}           
+
+[data-testid="stVerticalBlock"] div:nth-child(3) > [data-testid="stVerticalBlock"] {
+border-radius: 10px;
+background: rgba(214, 231, 231, 0.54);
+}
 
 </style>
 """, unsafe_allow_html=True)
