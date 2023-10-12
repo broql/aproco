@@ -87,6 +87,10 @@ padding: 3rem;
 .st-bw {
 background: white;            
 }            
+            
+[data-testid="stVerticalBlock"] div:nth-child(5) {
+background: #244250;            
+}
 
 </style>
 """, unsafe_allow_html=True)
