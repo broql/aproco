@@ -99,11 +99,19 @@ line-height: normal;
 }
             
 .stMarkdown h1:after {              
-content: "beta";            
-display: block;
+content: "beta";
 border-radius: 5px;
 background: #C02025;
-position: relative;                                    
+position: absolute;
+color: white;
+display: inline-flex;
+padding: 4px 8px;
+justify-content: center;
+align-items: center;
+font-size: 16px;
+font-weight: normal;     
+top: 10px;
+right: 80px;                           
 }
             
 .stMarkdown h2 {
