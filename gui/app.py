@@ -265,7 +265,7 @@ if query:
     st.session_state.sources = [doc.metadata['source'].split(
         '/')[-1].replace('.pdf', '') for doc in response['source_documents']]
 
-    feedback = st.columns([0.39, 0.43, 0.07, 0.07])
+    feedback = st.columns([0.37, 0.45, 0.07, 0.07])
     doYouLikeMyAnswer = feedback[1].subheader("Do you like my answer?")
     like = feedback[2].button("👍", on_click=on_like)
     dislike = feedback[3].button("👎", on_click=on_dislike)
