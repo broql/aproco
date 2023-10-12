@@ -119,8 +119,8 @@ font-weight: 600;
 line-height: normal;                  
 }            
 
-[data-testid="stVerticalBlock"] div:nth-child(5) > [data-testid="stVerticalBlock"] .stMarkdown h3,
-[data-testid="stVerticalBlock"] div:nth-child(4) > [data-testid="stVerticalBlock"] .stMarkdown h3 {
+[data-testid="stVerticalBlock"] div:nth-child(6) > [data-testid="stVerticalBlock"] .stMarkdown h3,
+[data-testid="stVerticalBlock"] div:nth-child(5) > [data-testid="stVerticalBlock"] .stMarkdown h3 {
 padding: 0;
 color: #244250;
 text-align: center;
@@ -131,21 +131,21 @@ line-height: normal;
 margin-bottom: 20px;          
 }           
 
-[data-testid="stVerticalBlock"] div:nth-child(5) > [data-testid="stVerticalBlock"],
-[data-testid="stVerticalBlock"] div:nth-child(4) > [data-testid="stVerticalBlock"] {
+[data-testid="stVerticalBlock"] div:nth-child(6) > [data-testid="stVerticalBlock"],
+[data-testid="stVerticalBlock"] div:nth-child(5) > [data-testid="stVerticalBlock"] {
 border-radius: 10px;
 background: rgba(214, 231, 231, 0.54);
 padding: 20px;
 margin: 20px 0;
 }
 
-[data-testid="stVerticalBlock"] div:nth-child(5) > [data-testid="stVerticalBlock"] [data-baseweb="input"] > [data-baseweb="base-input"],                        
-[data-testid="stVerticalBlock"] div:nth-child(4) > [data-testid="stVerticalBlock"] [data-baseweb="input"] > [data-baseweb="base-input"] {
+[data-testid="stVerticalBlock"] div:nth-child(6) > [data-testid="stVerticalBlock"] [data-baseweb="input"] > [data-baseweb="base-input"],                        
+[data-testid="stVerticalBlock"] div:nth-child(5) > [data-testid="stVerticalBlock"] [data-baseweb="input"] > [data-baseweb="base-input"] {
 background: white;            
 }
 
-[data-testid="stVerticalBlock"] > div:nth-child(5) button[kind="secondary"],
-[data-testid="stVerticalBlock"] > div:nth-child(4) button[kind="secondary"] {
+[data-testid="stVerticalBlock"] > div:nth-child(6) button[kind="secondary"],
+[data-testid="stVerticalBlock"] > div:nth-child(5) button[kind="secondary"] {
 border-radius: 10px;
 background: #34BFC3;   
 color: white;                              
