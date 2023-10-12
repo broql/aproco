@@ -68,6 +68,15 @@ def on_dislike():
 
 st.markdown("""
 <style>
+body {
+color: #244250;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
 [data-testid="block-container"] {
 background: #D6E7E7;
 border-radius: 10px;
