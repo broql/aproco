@@ -119,6 +119,7 @@ font-weight: 600;
 line-height: normal;                  
 }            
 
+[data-testid="stVerticalBlock"] div:nth-child(4) > [data-testid="stVerticalBlock"] .stMarkdown h3
 [data-testid="stVerticalBlock"] div:nth-child(3) > [data-testid="stVerticalBlock"] .stMarkdown h3 {
 padding: 0;
 color: #244250;
@@ -130,6 +131,7 @@ line-height: normal;
 margin-bottom: 20px;          
 }           
 
+[data-testid="stVerticalBlock"] div:nth-child(4) > [data-testid="stVerticalBlock"],
 [data-testid="stVerticalBlock"] div:nth-child(3) > [data-testid="stVerticalBlock"] {
 border-radius: 10px;
 background: rgba(214, 231, 231, 0.54);
