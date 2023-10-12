@@ -88,6 +88,15 @@ padding: 3rem;
 background: white;            
 }       
 
+.stMarkdown h1 {            
+color: #244250;
+font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+            
 .stMarkdown h2 {
 padding: 0;
 color: #244250;
