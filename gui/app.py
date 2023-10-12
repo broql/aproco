@@ -131,7 +131,8 @@ background: white;
 
 button[kind="secondary"] {
 border-radius: 10px;
-background: #34BFC3;            
+background: #34BFC3;   
+color: white;                              
 }            
 
 </style>
