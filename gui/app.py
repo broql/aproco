@@ -84,7 +84,8 @@ top: 50px;
 padding: 3rem;
 }            
 
-.st-bw {
+.st-bw,
+.st-bz {
 background: white;            
 }       
 
