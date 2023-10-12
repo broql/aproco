@@ -68,10 +68,15 @@ def on_dislike():
 
 st.markdown("""
 <style>
-            
-            
+                    
 [data-testid="stHorizontalBlock"]>[data-testid="column"]:nth-child(1) {
-    flex: 1 1 calc(25% - 1rem);
+    width: 0px;
+    position: relative;
+    top: 60px;
+    left: 0;
+}
+[data-testid="stHorizontalBlock"]>[data-testid="column"]:nth-child(1) img {
+    width: 50px;
 }
 [data-testid="stHorizontalBlock"]>[data-testid="column"]:nth-child(2) {
     flex: 1 1 calc(75% - 1rem);
