@@ -98,6 +98,14 @@ font-weight: 900;
 line-height: normal;
 }
             
+.stMarkdown h1:after {              
+content: "beta";            
+display: block;
+border-radius: 5px;
+background: #C02025;
+position: relative;                                    
+}
+            
 .stMarkdown h2 {
 padding: 0;
 color: #244250;
