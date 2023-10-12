@@ -158,9 +158,10 @@ border: 0;
 </style>
 """, unsafe_allow_html=True)
 
-# st.image(Image.open('gui/images/aproco.png'), width=150)
-# st.image(Image.open('gui/images/nd.png'), width=80)
 
+with st.container():
+    st.image(Image.open('gui/images/aproco.png'), width=120)
+    st.image(Image.open('gui/images/nd.png'), width=50)
 
 # st.markdown("# Knowledge Assistant")
 
