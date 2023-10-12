@@ -88,7 +88,7 @@ padding: 3rem;
 background: white;            
 }       
 
-.stMarkdown h3 {
+.stMarkdown h2 {
 padding: 0;
 color: #244250;
 text-align: center;
@@ -96,6 +96,15 @@ font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;                  
+}            
+
+.stMarkdown h3 {
+padding: 0;
+color: #244250;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;              
 }            
 
 </style>
