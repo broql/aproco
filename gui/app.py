@@ -66,13 +66,16 @@ def on_dislike():
     st.success('Thank you for your feedback!')
 
 
-# st.markdown("""
-# <style>
-# .gray-background {
-#   background-color: #D6E7E7;
-# }
-# </style>
-# """, unsafe_allow_html=True)
+st.markdown("""
+<style>
+[data-testid="stAppViewContainer"][data-testid="block-container"][data-testid="stVerticalBlock"][data-testid="stHorizontalBlock"]:first-child {
+    flex: 1 1 calc(25% - 1rem);
+}
+[data-testid="stAppViewContainer"][data-testid="block-container"][data-testid="stVerticalBlock"][data-testid="stHorizontalBlock"]:nth-child(2) {
+    flex: 1 1 calc(75% - 1rem);
+}
+</style>
+""", unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
 
