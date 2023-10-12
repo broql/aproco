@@ -130,7 +130,7 @@ col1, col2 = st.columns([0.88, 0.12])
 
 with col1:
     query = st.text_input(
-        label='Query', label_visibility='hidden', key='query')
+        label='', label_visibility='hidden', key='query')
 
 with col2:
     ask_button = st.button("Send")
