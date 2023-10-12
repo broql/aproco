@@ -1,4 +1,3 @@
-data/
 .env
 startup.sh
 __pycache__/
