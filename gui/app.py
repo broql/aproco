@@ -88,12 +88,15 @@ padding: 3rem;
 background: white;            
 }       
 
-.css-ocqkz7:after {
+.css-ocqkz7:before {
+background: gray;
 content: "";
 display: block;
 position: absolute;
-top: 0;
-left: 0;                                                
+width: 100%;
+height: 100px;
+left: 0;
+z-index: 0;
 }
 
 </style>
