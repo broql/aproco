@@ -145,6 +145,10 @@ border-radius: 10px;
 background: #34BFC3;   
 color: white;                              
 }            
+            
+[data-testid="stExpander"] [data-baseweb="accordion"] {
+border: 0;            
+}            
 
 </style>
 """, unsafe_allow_html=True)
