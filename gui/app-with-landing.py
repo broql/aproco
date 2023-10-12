@@ -1,3 +1,24 @@
+
+Otwarto wątek. Jedna nieprzeczytana wiadomość.
+
+Przejdź do treści
+Korzystanie z usługi Gmail z czytnikami ekranu
+
+1 z 1 918
+Kod apki na serwerze
+Odebrane
+
+Maciej Piernik <maciej.piernik@gmail.com>
+Załączniki
+11:16 (0 minut temu)
+do mnie
+
+Mam nadzieję że przejdzie :-D 
+
+Pozdrawiam serdecznie
+Maciej
+ Jeden załącznik
+  •  Przeskanowane przez Gmaila
 import json
 import os
 import streamlit as st
@@ -185,3 +206,5 @@ for f in os.listdir(documents_path):
 list_of_files.sort()
 for file in list_of_files:
     expander.markdown(f"- {file}")
+main.py
+Wyświetlanie main.py.
