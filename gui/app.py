@@ -90,7 +90,7 @@ background: white;
 
 .stMarkdown h1 {            
 color: #244250;
-font-family: Roboto;
+text-align: center;
 font-size: 40px;
 font-style: normal;
 font-weight: 900;
