@@ -140,7 +140,7 @@ padding: 20px;
 background: white;            
 }
 
-[data-testid="column"] button[kind="secondary"] {
+[data-testid="stVerticalBlock"] div:nth-child(3) button[kind="secondary"] {
 border-radius: 10px;
 background: #34BFC3;   
 color: white;                              
