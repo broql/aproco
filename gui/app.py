@@ -143,17 +143,20 @@ line-height: normal;
 # """)
 
 st.title("Knowledge Assistant")
-st.header("Hi! Ask me a question!")
-st.subheader("I'm still learning but I'll try to do my best!")
 
-col1, col2 = st.columns([0.88, 0.12])
 
-with col1:
-    query = st.text_input(
-        label='Query', label_visibility='collapsed', key='query')
+with st.container():
+    st.header("Hi! Ask me a question!")
+    st.subheader("I'm still learning but I'll try to do my best!")
 
-with col2:
-    ask_button = st.button("Send")
+    col1, col2 = st.columns([0.88, 0.12])
+
+    with col1:
+        query = st.text_input(
+            label='Query', label_visibility='collapsed', key='query')
+
+    with col2:
+        ask_button = st.button("Send")
 
 chat_name = "no-dev"
 documents_path = "data/documents/nd/"
