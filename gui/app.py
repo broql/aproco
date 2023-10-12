@@ -78,10 +78,10 @@ line-height: normal;
 }
 
 [data-testid="block-container"] {
-background: #D6E7E7;
 border-radius: 10px;
 position: relative;
 top: 50px;
+padding: 3rem;
 }            
 
 .st-bw {
