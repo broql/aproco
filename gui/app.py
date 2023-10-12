@@ -66,28 +66,28 @@ def on_dislike():
     st.success('Thank you for your feedback!')
 
 
-st.markdown("""
-<style>
-                    
-[data-testid="stVerticalBlock"] div:nth-child(2) {
-    width: 0px;
-    position: relative;
-    top: 60px;
-    left: 0;
-}
-[data-testid="stVerticalBlock"] div:nth-child(2) img {
-    width: 50px !important;
-}
-[data-testid="stHorizontalBlock"]>[data-testid="column"]:nth-child(3) {
-}
-</style>
-""", unsafe_allow_html=True)
+# st.markdown("""
+# <style>
 
-st.image(Image.open('gui/images/aproco.png'), width=150)
-st.image(Image.open('gui/images/nd.png'), width=80)
+# [data-testid="stVerticalBlock"] div:nth-child(2) {
+#     width: 0px;
+#     position: relative;
+#     top: 60px;
+#     left: 0;
+# }
+# [data-testid="stVerticalBlock"] div:nth-child(2) img {
+#     width: 50px !important;
+# }
+# [data-testid="stHorizontalBlock"]>[data-testid="column"]:nth-child(3) {
+# }
+# </style>
+# """, unsafe_allow_html=True)
+
+# st.image(Image.open('gui/images/aproco.png'), width=150)
+# st.image(Image.open('gui/images/nd.png'), width=80)
 
 
-st.markdown("# Knowledge Assistant")
+# st.markdown("# Knowledge Assistant")
 
 # st.expander('User Manual', expanded=False).markdown("""
 # **Welcome to our test site!**
