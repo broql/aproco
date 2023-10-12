@@ -126,9 +126,14 @@ st.markdown("# Knowledge Assistant")
 st.markdown("### Hi! Ask me a question!")
 st.markdown("#### I'm still learning but I'll try to do my best!")
 
-query = st.text_input(label='Query', label_visibility='hidden', key='query')
+col1, col2 = st.columns(2)
 
-ask_button = st.button("Send")
+with col1:
+    query = st.text_input(
+        label='Query', label_visibility='hidden', key='query')
+
+with col2:
+    ask_button = st.button("Send")
 
 chat_name = "no-dev"
 documents_path = "data/documents/nd/"
