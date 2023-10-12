@@ -119,7 +119,7 @@ font-weight: 600;
 line-height: normal;                  
 }            
 
-.stMarkdown h3 {
+[data-testid="stVerticalBlock"] div:nth-child(3) > [data-testid="stVerticalBlock"] .stMarkdown h3 {
 padding: 0;
 color: #244250;
 text-align: center;
@@ -134,6 +134,7 @@ margin-bottom: 20px;
 border-radius: 10px;
 background: rgba(214, 231, 231, 0.54);
 padding: 20px;
+margin: 20px 0;
 }
             
 [data-testid="stVerticalBlock"] div:nth-child(3) > [data-testid="stVerticalBlock"] [data-baseweb="input"] > [data-baseweb="base-input"] {
