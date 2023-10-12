@@ -133,9 +133,9 @@ z-index: 0;
 # In case of any questions, please contact us directly: nd@aproco.io
 # """)
 
-st.markdown("# Knowledge Assistant")
-st.markdown("### Hi! Ask me a question!")
-st.markdown("#### I'm still learning but I'll try to do my best!")
+st.header("Knowledge Assistant")
+st.subheader("Hi! Ask me a question!")
+st.subheader("I'm still learning but I'll try to do my best!")
 
 col1, col2 = st.columns([0.88, 0.12])
 
