@@ -17,13 +17,16 @@ from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, Sy
 
 load_dotenv()
 
+
 class StreamHandler(BaseCallbackHandler):
     def __init__(self, container, initial_text=""):
         self.container = container
-        self.text=initial_text
+        self.text = initial_text
+
     def on_llm_new_token(self, token: str, **kwargs) -> None:
         self.text += token
-        self.container.markdown(self.text) 
+        self.container.markdown(self.text)
+
 
 def on_like():
     with open('data/qa.json', 'a') as f:
@@ -43,6 +46,7 @@ def on_like():
 
     st.success('Thank you for your feedback!')
 
+
 def on_dislike():
     with open('data/qa.json', 'a') as f:
         qa_json = {
@@ -60,6 +64,15 @@ def on_dislike():
     st.session_state.sources = []
 
     st.success('Thank you for your feedback!')
+
+
+# st.markdown("""
+# <style>
+# .gray-background {
+#   background-color: #D6E7E7;
+# }
+# </style>
+# """, unsafe_allow_html=True)
 
 columns = st.columns(5)
 columns[1].text('')
@@ -92,11 +105,12 @@ Please keep in mind that we keep a log of questions and answers for evaluation p
 In case of any questions, please contact us directly: nd@aproco.io
 """)
 
-st.markdown("### Question")
+st.markdown("### Hi! Ask me a question!")
+st.markdown("#### I'm still learning but I'll try to do my best!")
 
 query = st.text_input(label='Query', label_visibility='hidden', key='query')
 
-ask_button = st.button("Ask")
+ask_button = st.button("Send")
 
 chat_name = "no-dev"
 documents_path = "data/documents/nd/"
@@ -119,7 +133,7 @@ PROMPT_TEMPLATE = ChatPromptTemplate.from_messages(messages)
 # vectorstore
 if not os.path.exists(f"data/db/{chat_name}"):
     documents = []
-    for filename in os.listdir(documents_path): 
+    for filename in os.listdir(documents_path):
         if filename.endswith('.pdf'):
             loader = PyPDFLoader(os.path.join(documents_path, filename))
             documents.extend(loader.load())
@@ -130,20 +144,23 @@ if not os.path.exists(f"data/db/{chat_name}"):
     texts = text_splitter.split_documents(documents)
 
     print("Creating new vectorstore")
-    vectorstore = Chroma.from_documents(texts, OpenAIEmbeddings(deployment='embeddings', chunk_size=16), collection_name=chat_name, persist_directory=f"data/db/{chat_name}")
+    vectorstore = Chroma.from_documents(texts, OpenAIEmbeddings(
+        deployment='embeddings', chunk_size=16), collection_name=chat_name, persist_directory=f"data/db/{chat_name}")
     vectorstore.persist()
 else:
     print("Loading existing vectorstore")
-    vectorstore = Chroma(collection_name=chat_name, embedding_function=OpenAIEmbeddings(deployment='embeddings', chunk_size=16), persist_directory=f"data/db/{chat_name}")
+    vectorstore = Chroma(collection_name=chat_name, embedding_function=OpenAIEmbeddings(
+        deployment='embeddings', chunk_size=16), persist_directory=f"data/db/{chat_name}")
 
 if query:
     st.markdown("### Answer")
 
-    chat_box = st.empty() 
+    chat_box = st.empty()
     stream_handler = StreamHandler(chat_box)
 
     qa = ConversationalRetrievalChain.from_llm(
-        AzureChatOpenAI(deployment_name='llm', model_name="gpt-4", temperature=0, streaming=True, callbacks=[stream_handler]),
+        AzureChatOpenAI(deployment_name='llm', model_name="gpt-4",
+                        temperature=0, streaming=True, callbacks=[stream_handler]),
         vectorstore.as_retriever(search_kwargs={"k": 4}),
         return_source_documents=True,
         verbose=False,
@@ -152,7 +169,8 @@ if query:
     response = qa({'question': query, 'chat_history': []})
 
     st.session_state.answer = response['answer']
-    st.session_state.sources = [doc.metadata['source'].split('/')[-1].replace('.pdf', '') for doc in response['source_documents']]
+    st.session_state.sources = [doc.metadata['source'].split(
+        '/')[-1].replace('.pdf', '') for doc in response['source_documents']]
 
     feedback = st.columns([0.86, 0.07, 0.07])
     like = feedback[1].button("👍", on_click=on_like)
@@ -161,7 +179,8 @@ if query:
     st.markdown("### Sources")
 
     for doc in response['source_documents']:
-        st.markdown(f"- {doc.metadata['source'].split('/')[-1].replace('.pdf', '')}")
+        st.markdown(
+            f"- {doc.metadata['source'].split('/')[-1].replace('.pdf', '')}")
 
     with open('data/qa.json', 'a') as f:
         qa_json = {
