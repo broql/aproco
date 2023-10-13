@@ -129,7 +129,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;    
 margin-bottom: 20px;          
-}           
+}                      
 
 [data-testid="stVerticalBlock"] div:nth-child(5) > [data-testid="stVerticalBlock"],
 [data-testid="stVerticalBlock"] div:nth-child(4) > [data-testid="stVerticalBlock"] {
@@ -176,6 +176,14 @@ display: inline-flex;
                        
 [data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) > div > div:nth-child(2) {            
 left: 75px;            
+}
+
+@media screen and (max-width: 460px) {
+[data-testid="stVerticalBlock"] div:nth-child(5) > [data-testid="stVerticalBlock"] .stMarkdown h3 span,
+[data-testid="stVerticalBlock"] div:nth-child(4) > [data-testid="stVerticalBlock"] .stMarkdown h3 span {
+margin-left: 10px;
+font-size: 14px;
+}
 }
 
 </style>
