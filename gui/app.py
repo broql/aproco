@@ -154,6 +154,11 @@ color: white;
 [data-testid="stExpander"] [data-baseweb="accordion"] {
 border: 0;            
 }            
+            
+[data-testid="stVerticalBlock"] > div:nth-child(2) img {
+    position: relative;
+    top: 20px;            
+}
 
 </style>
 """, unsafe_allow_html=True)
