@@ -155,7 +155,7 @@ color: white;
 border: 0;            
 }            
             
-[data-testid="stVerticalBlock"] div:nth-child(2) {
+[data-testid="block-container"] [data-testid="stVerticalBlock"] div:nth-child(2) {
 position: fixed;
 left: 30px;
 top: 10px;
