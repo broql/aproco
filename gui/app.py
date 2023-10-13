@@ -161,7 +161,7 @@ left: 30px;
 top: 10px;
 }
             
-[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) {
+[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) img {
 position: absolute;
 top: 40px;           
 }            
