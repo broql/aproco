@@ -165,6 +165,10 @@ top: 10px;
 position: absolute;
 top: 40px;           
 }            
+            
+[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) > div > div:nth-child(2) {            
+left: 75px;            
+}
 
 </style>
 """, unsafe_allow_html=True)
