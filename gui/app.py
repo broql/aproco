@@ -155,7 +155,7 @@ color: white;
 border: 0;            
 }            
             
-[data-testid="stVerticalBlock"] > div:nth-child(2) {
+[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) {
 position: fixed;
 left: 30px;
 top: 10px;
