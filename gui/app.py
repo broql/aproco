@@ -160,6 +160,11 @@ position: fixed;
 left: 30px;
 top: 10px;
 }
+            
+[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) {
+position: absolute;
+top: 40px;           
+}            
 
 </style>
 """, unsafe_allow_html=True)
