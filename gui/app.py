@@ -165,6 +165,15 @@ top: 10px;
 position: absolute;
 top: 40px;           
 }            
+
+[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) > div > div:nth-child(2):after {                        
+position: absolute;
+content: "&";            
+left: 50px;
+display: block;            
+width: 40px;
+height: 40px;                        
+}
             
 [data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) > div > div:nth-child(2) {            
 left: 75px;            
