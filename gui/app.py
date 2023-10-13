@@ -44,7 +44,7 @@ def on_like():
     st.session_state.answer = ''
     st.session_state.sources = []
 
-    st.success('Thank you for your feedback!')
+    # st.success('Thank you for your feedback!')
 
 
 def on_dislike():
@@ -63,7 +63,7 @@ def on_dislike():
     st.session_state.answer = ''
     st.session_state.sources = []
 
-    st.success('Thank you for your feedback!')
+    # st.success('Thank you for your feedback!')
 
 
 st.markdown("""
