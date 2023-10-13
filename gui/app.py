@@ -188,7 +188,12 @@ font-size: 14px;
 .stMarkdown h2 span {
 margin-left: 10px;
 font-size: 24px;           
-}             
+}       
+
+.stMarkdown h1:after {     
+top: 70px;
+right: 8px;
+}                  
 }
 
 </style>
