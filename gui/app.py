@@ -168,11 +168,10 @@ top: 40px;
 
 [data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) > div > div:nth-child(1) [data-testid="stImage"]:after {                        
 position: absolute;
-content: "&";            
-left: 50px;
-display: block;            
-width: 40px;
-height: 40px;                        
+content: "&";
+left: 54px;
+top: 59px;
+display: inline-flex;              
 }
             
 [data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) > div > div:nth-child(2) {            
