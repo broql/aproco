@@ -166,7 +166,7 @@ position: absolute;
 top: 40px;           
 }            
 
-[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) > div > div:nth-child(2):after {                        
+[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) > div > div:nth-child(2) img:after {                        
 position: absolute;
 content: "&";            
 left: 50px;
