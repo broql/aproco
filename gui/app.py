@@ -155,9 +155,9 @@ color: white;
 border: 0;            
 }            
             
-[data-testid="stVerticalBlock"] > div:nth-child(2) img {
-    position: relative;
-    top: 20px;            
+[data-testid="stVerticalBlock"] > div:nth-child(2) {
+position: fixed;
+left: 30px;
 }
 
 </style>
