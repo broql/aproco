@@ -154,18 +154,21 @@ color: white;
 [data-testid="stExpander"] [data-baseweb="accordion"] {
 border: 0;            
 }            
-            
+
+[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(3),
 [data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) {
 position: fixed;
 left: 30px;
 top: 10px;
 }
-            
+
+[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(3) img,                        
 [data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) img {
 position: absolute;
 top: 40px;           
 }            
 
+[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(3) > div > div:nth-child(1) [data-testid="stImage"]:after,
 [data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) > div > div:nth-child(1) [data-testid="stImage"]:after {                        
 position: absolute;
 content: "&";
@@ -173,7 +176,8 @@ left: 54px;
 top: 59px;
 display: inline-flex;              
 }
-            
+
+[data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(3) > div > div:nth-child(2),                        
 [data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) > div > div:nth-child(2) {            
 left: 75px;            
 }
