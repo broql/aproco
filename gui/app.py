@@ -184,6 +184,11 @@ left: 75px;
 margin-left: 10px;
 font-size: 14px;
 }
+            
+.stMarkdown h2 span {
+margin-left: 10px;
+font-size: 24px;           
+}             
 }
 
 </style>
