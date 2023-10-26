@@ -1,5 +1,7 @@
+data/db/*
+data/documents/
+keys.json
+__pycache__/main.cpython-311.pyc
 .env
+.vscode
 startup.sh
-__pycache__/
-.vscode/
-```
