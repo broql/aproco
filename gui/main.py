@@ -20,6 +20,7 @@ load_dotenv()
 
 regulations = ['EU', 'FDA', 'PICS']
 
+
 class StreamHandler(BaseCallbackHandler):
     def __init__(self, container, initial_text=""):
         self.container = container
@@ -28,6 +29,7 @@ class StreamHandler(BaseCallbackHandler):
     def on_llm_new_token(self, token: str, **kwargs) -> None:
         self.text += token
         self.container.markdown(self.text)
+
 
 def save_query(file='data/qa.csv', feedback=None):
     row = pd.DataFrame({
@@ -43,14 +45,17 @@ def save_query(file='data/qa.csv', feedback=None):
     else:
         row.to_csv(file, mode='a', header=False, index=False, sep=';')
 
+
 def reset_view():
     st.session_state.query = ''
     st.session_state.answer = ''
     st.session_state.sources = []
 
+
 def on_like():
     save_query(feedback=1)
     reset_view()
+
 
 def on_dislike():
     save_query(feedback=-1)
@@ -198,8 +203,10 @@ with st.container():
     st.image(Image.open('gui/images/nd.png'), width=50)
     st.image(Image.open('gui/images/aproco.png'), width=120)
 
-chat_name = st.sidebar.selectbox('Regulations', regulations, key='chat_name')
-chat_name += '_Documents'
+with st.sidebar:
+    chat_name = st.sidebar.selectbox(
+        'Regulations', regulations, key='chat_name')
+    chat_name += '_Documents'
 
 st.title("Knowledge Assistant")
 
@@ -236,7 +243,7 @@ PROMPT_TEMPLATE = ChatPromptTemplate.from_messages(messages)
 
 if not os.path.exists(f"data/db/{chat_name}"):
     documents = []
-    
+
     for root, dirs, files in os.walk(documents_path[chat_name]):
         for file in files:
             if file.endswith('.pdf'):
@@ -288,7 +295,8 @@ if query:
     save_query()
 
 
-expander = st.sidebar.expander("All source documents in the database", expanded=False)
+expander = st.sidebar.expander(
+    "All source documents in the database", expanded=False)
 
 list_of_files = []
 for root, dirs, files in os.walk(documents_path[chat_name]):
