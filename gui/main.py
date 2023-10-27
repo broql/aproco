@@ -203,10 +203,9 @@ with st.container():
     st.image(Image.open('gui/images/nd.png'), width=50)
     st.image(Image.open('gui/images/aproco.png'), width=120)
 
-with st.sidebar:
-    chat_name = st.sidebar.selectbox(
-        'Regulations', regulations, key='chat_name')
-    chat_name += '_Documents'
+chat_name = st.sidebar.selectbox(
+    'Regulations', regulations, key='chat_name')
+chat_name += '_Documents'
 
 st.title("Knowledge Assistant")
 
