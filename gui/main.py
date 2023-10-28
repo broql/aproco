@@ -195,6 +195,10 @@ top: 70px;
 right: 8px;
 }                  
 }
+            
+[data-testid="stSidebar"] {
+background: rgba(214, 231, 231, 0.54)
+}
 
 </style>
 """, unsafe_allow_html=True)
