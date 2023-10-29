@@ -197,7 +197,7 @@ right: 8px;
 }
             
 [data-testid="stSidebar"] {
-background: rgba(214, 231, 231, 0.54)
+background: #D6E7E7;
 }
 
 </style>
