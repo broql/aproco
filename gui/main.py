@@ -159,6 +159,7 @@ border: 0;
 position: fixed;
 left: 30px;
 top: 10px;
+z-index: 1000000;
 }
                       
 [data-testid="stAppViewContainer"] > section > [data-testid="block-container"] > div > [data-testid="stVerticalBlock"] > div:nth-child(2) img {
